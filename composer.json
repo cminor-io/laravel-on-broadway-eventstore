@@ -1,0 +1,40 @@
+{
+  "name": "cminor-io/laravel-on-broadway-eventstore",
+  "description": "A Broadway event store implementation using Laravel DB connector.",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "broadway",
+    "event store",
+    "ddd",
+    "event sourcing",
+    "aggregates"
+  ],
+  "authors": [
+    {
+      "name": "Dimitrios Psarrou",
+      "email": "dpsarrou@gmail.com",
+      "homepage" : "http://cminor.io"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "ramsey/uuid": "~2.4",
+    "broadway/broadway": "~0.8",
+    "illuminate/database": "^5.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.0",
+    "mockery/mockery": "^0.9.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "CminorIO\\LaravelOnBroadway\\EventStore\\": "src/EventStore/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
